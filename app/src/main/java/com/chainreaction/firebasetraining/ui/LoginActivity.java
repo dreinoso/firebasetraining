@@ -52,7 +52,6 @@ public class LoginActivity extends AppCompatActivity {
         String clientId = getResources().getString(R.string.default_web_client_id);
         //Log.d(TAG, "onCreate " + getResources().getString(R.string.default_web_client_id));
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                // todo fix authentication issue, id not recognized
                 .requestIdToken(clientId)
                 .requestEmail()
                 .build();
