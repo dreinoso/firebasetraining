@@ -30,6 +30,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = LoginActivity.class.getName();
+    public static final String GOOGLE_USER_ID_TAG = "com.chainreaction.firebasetraining.googleuserid";
     private FirebaseAuth firebaseAuth;
     private static final int RC_SIGN_IN = 9001;
     private GoogleSignInClient mGoogleSignInClient;
@@ -69,8 +70,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-            Log.d(TAG,"updateUI user found");
+            String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            Log.d(TAG,"updateUI user found: " + userId);
             Intent homeActivityIntent = new Intent(this, MainActivity.class);
+            homeActivityIntent.putExtra(GOOGLE_USER_ID_TAG, userId);
             startActivity(homeActivityIntent);
         } else {
             Log.d(TAG,"updateUI user not found");

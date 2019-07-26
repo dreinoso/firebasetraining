@@ -14,4 +14,7 @@
     <string name="age_hint">Age</string>
     <string name="date_hint">Date</string>
     <string name="sing_out_button">Sing Out</string>
+    <string name="submit_button">Submit Data</string>
+    <string name="all_field_required">All fields are required</string>
+    <string name="posting_message">Posting...</string>
 </resources>
