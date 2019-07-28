@@ -121,11 +121,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Toast.makeText(this, getResources().getString(R.string.posting_message), Toast.LENGTH_SHORT).show();
-        insertNewClient(userId, name, lastName, age, date);
+        insertNewData(userId, name, lastName, age, date);
     }
 
-    private void insertNewClient(String userId, String name, String lastName, String age, String date) {
-        Log.d(TAG, "insertNewClient");
+    private void insertNewData(String userId, String name, String lastName, String age, String date) {
+        Log.d(TAG, "insertNewData");
         //mDatabase.setValue(newClient);
 
         String key = mDatabase.child("clients").push().getKey();
@@ -133,23 +133,6 @@ public class MainActivity extends AppCompatActivity {
         DemoClient newClient = new DemoClient();
         newClient.setValue(userId, name, lastName, age, date);
         Map<String, Object> clientValues = newClient.toMap();
-
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/clients/" + userId , clientValues);
-        //childUpdates.put("/user-posts/" + userId + "/" + key, clientValues);
-        mDatabase.updateChildren(childUpdates);
-    }
-
-    private void updateClient(DemoClient demoClient, String name, String lastName, String age, String date) {
-        Log.d(TAG, "updateClient");
-        //mDatabase.setValue(newClient);
-
-        demoClient.name = name;
-        demoClient.lastName = lastName;
-        demoClient.age = age;
-        demoClient.date = date;
-
-        Map<String, Object> clientValues = demoClient.toMap();
 
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/clients/" + userId , clientValues);
