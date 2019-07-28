@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Data Saver</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in with Google</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="name_hint">Type your name</string>
+    <string name="last_name_hint">Type your last name</string>
+    <string name="age_hint">Type your age</string>
+    <string name="date_hint">Type your date</string>
+    <string name="sing_out_button">Sing Out</string>
+    <string name="submit_button">Submit Data</string>
+    <string name="all_field_required">All fields are required</string>
+    <string name="posting_message">Posting...</string>
+    <string name="name_text">Name</string>
+    <string name="clientLastName_text">Last Name</string>
+    <string name="clientAge_text">Age</string>
+    <string name="clientDate_text">Date</string>
+    <string name="no_client_registed">No client registered yet</string>
+    <string name="fetching_user_data">Fetching client data</string>
+</resources>
