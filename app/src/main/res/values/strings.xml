@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">firebaseTraining</string>
+    <string name="app_name">Data Saver</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -9,12 +9,16 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="name_hint">Name</string>
-    <string name="last_name_hint">Last Name</string>
-    <string name="age_hint">Age</string>
-    <string name="date_hint">Date</string>
+    <string name="name_hint">Type your name</string>
+    <string name="last_name_hint">Type your last name</string>
+    <string name="age_hint">Type your age</string>
+    <string name="date_hint">Type your date</string>
     <string name="sing_out_button">Sing Out</string>
     <string name="submit_button">Submit Data</string>
     <string name="all_field_required">All fields are required</string>
     <string name="posting_message">Posting...</string>
+    <string name="name_text">Name</string>
+    <string name="clientLastName_text">Last Name</string>
+    <string name="clientAge_text">Age</string>
+    <string name="clientDate_text">Date</string>
 </resources>
