@@ -21,4 +21,6 @@
     <string name="clientLastName_text">Last Name</string>
     <string name="clientAge_text">Age</string>
     <string name="clientDate_text">Date</string>
+    <string name="no_client_registed">No client registered yet</string>
+    <string name="fetching_user_data">Fetching client data</string>
 </resources>

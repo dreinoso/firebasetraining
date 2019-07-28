@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateClientValues() {
+        Toast.makeText(this, R.string.fetching_user_data,Toast.LENGTH_SHORT);
         mDatabase.child("clients").child(userId).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                             dateText.setText(demoClient.date);
                         } else {
                             Log.d(TAG, "updateClientValues: onDataChanged no client registered yet");
+                            Toast.makeText(getApplicationContext(), R.string.no_client_registed,Toast.LENGTH_SHORT);
                         }
                     }
 
